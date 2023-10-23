@@ -4,8 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*Carrusel*/
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,7 +24,6 @@ body {
     margin-right: 10px;
 }
 
-/*Carrusel*/
 
 .carousel-container {
     position: relative;
@@ -49,8 +46,9 @@ body {
 .carousel-item img {
     width: 100%;
     border-radius: 10px;
-    height: 400px;
-    opacity: 0.7; /* Añadimos opacidad */
+    max-height: 600px;
+    object-fit: cover;
+    opacity: 0.7; 
 }
 
 .overlay {
@@ -60,7 +58,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    opacity: 4; /* Añadimos opacidad */
+    opacity: 4;
 }
 
 .overlay h2 {
@@ -100,6 +98,8 @@ body {
     margin-bottom: 20px;
 }
 
+/*Card*/
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -122,17 +122,26 @@ body {
     margin-bottom: 10px;
 }
 
+.dashboard{
+    background-color: #2E4159;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
 .card-title {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.card-text {
-    font-size: 1em;
-    margin-bottom: 10px;
+.card:hover {
+    transform: translateY(-10px); 
 }
 
-.card:hover {
-    transform: translateY(-10px); /* Mueve hacia arriba */
+.dashboard:hover{
+    transform: translateY(-10px);
 }
