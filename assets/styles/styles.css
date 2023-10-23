@@ -1,0 +1,138 @@
+body {
+    background-color: #2F3A59;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/*Carrusel*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.buscar{
+    width: 40px;
+}
+.usuario{
+    width: 40px;
+}
+
+.navbar a {
+    color: #898C37;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*Carrusel*/
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    animation: slide 9s infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    opacity: 0.7; /* Añadimos opacidad */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 4; /* Añadimos opacidad */
+}
+
+.overlay h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+}
+
+/*Contexto de la herramienta*/
+
+.contexto {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contexto img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2E4159;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Mueve hacia arriba */
+}
