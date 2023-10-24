@@ -1,0 +1,61 @@
+body {
+    background-color: #2F3A59;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2F3A59;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    max-width: 100px; 
+}
+
+/* Contenedor de Cards (Vertical) */
+.cards-container {
+    justify-content: center;
+}
+
+.card {
+    background-color: #2E4159;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dashboard {
+    background-color: #2E4159;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
