@@ -1,5 +1,5 @@
 body {
-    background-color: #243874;
+    background-color: #151926;
     color: #fff;
     font-family: Arial, sans-serif;
 }
@@ -11,6 +11,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buscar{
@@ -25,7 +26,7 @@ body {
     color: #898C37;
     text-decoration: none;
     margin-right: 10px;
-    border-radius: 20px;
+    border-radius: 20px;   
 }
 
 /*Carrusel*/
@@ -52,7 +53,8 @@ body {
     border-radius: 10px;
     max-height: 600px;
     object-fit: cover;
-    opacity: 0.7; 
+    opacity: 0.7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .overlay {
@@ -117,6 +119,8 @@ body {
     margin: 20px;
     max-width: 300px;
     text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 
 .card img {
@@ -134,7 +138,7 @@ body {
     width: 200px;
     text-align: center;
     color: #fff;
-    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-title {

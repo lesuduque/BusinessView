@@ -1,25 +1,111 @@
 body {
-    background-color: #2F3A59;
+    background-color: #151926;
     color: #fff;
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
+/*Navbar*/
 .navbar {
-    background-color: #2F3A59;
-    color: #fff;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.navbar img {
-    max-width: 100px; 
+.buscar{
+    width: 40px;
+}
+.usuario{
+    width: 40px;
+}
+
+.navbar a {
+    background-color: #2E4159;
+    color: #898C37;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 20px;   
+}
+
+/* Dashboard */
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 480px;
+    padding: 10px 20px;
+}
+
+
+.card1{
+    width: 293px;
+    height: 459px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card2{
+    width: 293px;
+    height: 285px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card3{
+    width: 293px;
+    height: 99px;
+    border-radius: 30px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card4{
+    width: 1057px;
+    height: 250px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+ .card5{
+    width: 516px;
+    height: 381px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+ .card6{
+    width: 516px;
+    height: 381px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+ .card7{
+    width: 516px;
+    height: 381px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+ .card8{
+    width: 516px;
+    height: 381px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+ .card9{
+    width: 377px;
+    height: 889px;
+    border-radius: 48px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Contenedor de Cards (Vertical) */
-.cards-container {
+/* .cards-container {
     justify-content: center;
 }
 
@@ -54,7 +140,7 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
-}
+} */
 
 
 
