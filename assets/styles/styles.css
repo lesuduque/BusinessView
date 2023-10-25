@@ -1,5 +1,5 @@
 body {
-    background-color: #2F3A59;
+    background-color: #243874;
     color: #fff;
     font-family: Arial, sans-serif;
 }
@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #2E4159;
 }
 
 .buscar{
@@ -20,9 +21,11 @@ body {
 }
 
 .navbar a {
+    background-color: #2E4159;
     color: #898C37;
     text-decoration: none;
     margin-right: 10px;
+    border-radius: 20px;
 }
 
 /*Carrusel*/
@@ -30,7 +33,7 @@ body {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .carousel {
@@ -131,6 +134,7 @@ body {
     width: 200px;
     text-align: center;
     color: #fff;
+    
 }
 
 .card-title {
