@@ -32,13 +32,26 @@ body {
 /* Dashboard */
 .dashboard-container{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
     height: 480px;
     padding: 10px 20px;
 }
 
+.lateral-izq, .central, .lateral-der {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-top: 20px;
+}
+
+.lateral-central {
+    display: flex;
+    flex-direction: column;
+}
 
 .card1{
     width: 293px;
@@ -68,41 +81,22 @@ body {
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 } 
- .card5{
+.card5, .card6, .card7, .card8 {
     width: 516px;
     height: 381px;
     border-radius: 48px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} 
- .card6{
-    width: 516px;
-    height: 381px;
-    border-radius: 48px;
-    background: #2E4159;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} 
- .card7{
-    width: 516px;
-    height: 381px;
-    border-radius: 48px;
-    background: #2E4159;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} 
- .card8{
-    width: 516px;
-    height: 381px;
-    border-radius: 48px;
-    background: #2E4159;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} 
- .card9{
+}
+
+.card9 {
     width: 377px;
     height: 889px;
     border-radius: 48px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 
 /* Contenedor de Cards (Vertical) */
 /* .cards-container {
