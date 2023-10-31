@@ -16,6 +16,6 @@ Este proyecto es una aplicación web para el análisis de datos de ventas, emple
 
 ## Equipo
 
-- Verónica
+- Verónica Montoya
 - Juan Gutierrez 
 - Lenny Susana Duque Arango 
