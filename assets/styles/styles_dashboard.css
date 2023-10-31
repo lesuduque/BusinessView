@@ -1,7 +1,7 @@
 body {
     background-color: #151926;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Navbar*/
@@ -9,43 +9,53 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
     padding: 10px 20px;
     background-color: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buscar{
-    width: 40px;
+    width: 50px;
+    padding: 10px 20px;
 }
 .usuario{
-    width: 40px;
+    width: 50px;
+    padding: 10px 20px;
 }
 
 .navbar a {
     background-color: #2E4159;
     color: #898C37;
-    text-decoration: none;
     margin-right: 10px;
     border-radius: 20px;   
 }
 
 /* Dashboard */
+
 .dashboard-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    height: 480px;
+    margin-top: 100px;
+    width: auto;
+    height: 1080px;
     padding: 10px 20px;
 }
 
 .lateral-izq, .central, .lateral-der {
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 
+
 .row {
-    display: flex;
-    margin-top: 20px;
+    display: grid;
+    /* grid: none; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(159px, auto)
 }
 
 .lateral-central {
@@ -56,14 +66,15 @@ body {
 .card1{
     width: 293px;
     height: 459px;
-    border-radius: 48px;
+    border-radius: 30px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card2{
     width: 293px;
     height: 285px;
-    border-radius: 48px;
+    border-radius: 30px;
+    margin-top: 40px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -71,20 +82,35 @@ body {
     width: 293px;
     height: 99px;
     border-radius: 30px;
+    margin-top: 40px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card4{
-    width: 1057px;
+    width: 1000px;
     height: 250px;
-    border-radius: 48px;
+    border-radius: 30px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} 
-.card5, .card6, .card7, .card8 {
-    width: 516px;
-    height: 381px;
-    border-radius: 48px;
+}
+
+main{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card5, .card6 {
+    width: 450px;
+    height: 301px;
+    border-radius: 30px;
+    background: #2E4159;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card7, .card8 {
+    width: 450px;
+    height: 301px;
+    border-radius: 30px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -92,50 +118,89 @@ body {
 .card9 {
     width: 377px;
     height: 889px;
-    border-radius: 48px;
+    border-radius: 30px;
     background: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader {
+    font-size: 10px;
+    margin: 30% auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+  }
+  section {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(159px, auto)
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #FFF;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #898C37;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
-/* Contenedor de Cards (Vertical) */
-/* .cards-container {
-    justify-content: center;
-}
-
-.card {
-    background-color: #2E4159;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    text-align: center;
-    color: #fff;
-}
-
-.card img {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.dashboard {
-    background-color: #2E4159;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    text-align: center;
-    color: #fff;
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-} */
-
-
+  
 
 

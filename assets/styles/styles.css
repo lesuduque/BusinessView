@@ -1,7 +1,7 @@
 body {
     background-color: #151926;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Navbar*/
@@ -9,22 +9,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
     padding: 10px 20px;
     background-color: #2E4159;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buscar{
-    width: 40px;
+    width: 50px;
+    padding: 10px 20px;
+
 }
 .usuario{
-    width: 40px;
+    width: 50px;
+    padding: 10px 20px;
 }
 
 .navbar a {
     background-color: #2E4159;
     color: #898C37;
-    text-decoration: none;
     margin-right: 10px;
     border-radius: 20px;   
 }
@@ -99,7 +102,7 @@ body {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 10em;
     font-weight: bold;
     margin-bottom: 20px;
 }
