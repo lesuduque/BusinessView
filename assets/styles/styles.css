@@ -1,7 +1,7 @@
 body {
-    background-color: #151926;
+    background-color: #1e2122;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /*Navbar*/
@@ -11,7 +11,7 @@ body {
     align-items: center;
     border-radius: 20px;
     padding: 10px 20px;
-    background-color: #2E4159;
+    background-color: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .navbar a {
-    background-color: #2E4159;
+    background-color: #181a1b;
     color: #898C37;
     margin-right: 10px;
     border-radius: 20px;   
@@ -111,19 +111,30 @@ body {
 
 .cards-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
+.perfiles{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.link-dashboard{
+    text-decoration: none;
+}
+
 .card {
-    background-color: #2E4159;
+    background-color: #181a1b;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
     max-width: 300px;
     text-align: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+    transition: 0.5s;
 }
 
 .card img {
@@ -134,18 +145,15 @@ body {
 }
 
 .dashboard{
-    background-color: #2E4159;
+    background-color: #181a1b;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    width: 200px;
+    width: 600px;
     text-align: center;
     color: #fff;
+    transition: 0.5s;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.link-dashboard{
-    text-decoration: none;
 }
 
 .card-title {
@@ -155,9 +163,27 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10px); 
+    transform: translate(-3px, 0px) skew(7deg, 7deg);
 }
 
 .dashboard:hover{
-    transform: translateY(-10px);
+    transform: translate(-3px, 0px) skew(7deg, 7deg);
 }
+
+  /* Footer */
+
+  .site-footer
+  {
+    background-color:#181a1b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color: #898C37;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  

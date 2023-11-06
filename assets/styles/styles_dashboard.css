@@ -1,5 +1,5 @@
 body {
-    background-color: #151926;
+    background-color: #1e2122;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +11,7 @@ body {
     align-items: center;
     border-radius: 20px;
     padding: 10px 20px;
-    background-color: #2E4159;
+    background-color: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar a {
-    background-color: #2E4159;
+    background-color: #181a1b;
     color: #898C37;
     margin-right: 10px;
     border-radius: 20px;   
@@ -67,7 +67,7 @@ body {
     width: 293px;
     height: 459px;
     border-radius: 30px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card2{
@@ -75,7 +75,7 @@ body {
     height: 285px;
     border-radius: 30px;
     margin-top: 40px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card3{
@@ -83,14 +83,14 @@ body {
     height: 99px;
     border-radius: 30px;
     margin-top: 40px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card4{
     width: 1000px;
     height: 250px;
     border-radius: 30px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -103,7 +103,7 @@ main{
     width: 450px;
     height: 301px;
     border-radius: 30px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -111,7 +111,7 @@ main{
     width: 450px;
     height: 301px;
     border-radius: 30px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -119,7 +119,7 @@ main{
     width: 377px;
     height: 889px;
     border-radius: 30px;
-    background: #2E4159;
+    background: #181a1b;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 

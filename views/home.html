@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>BusinessView</title>
 </head>
 <body>
 
+    <!-- Header -->
     <div class="navbar">
         <section>
             <img class="logo" src="/assets/img/analítica.png" alt="logo">
@@ -24,6 +25,7 @@
         </section>
     </div>
 
+    <!-- Carrusel -->
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-item">
@@ -47,29 +49,56 @@
         </div>
     </div>
     
-    <div class="contexto">
+    <!-- Contexto -->
+ 
+    <section class="contexto">
         <h1>Bienvenido a BusinessView</h1>
-        <div class="cards-container">
+        <section class="cards-container">
             <p>Una herramienta está diseñada obtener información  a partir de tus datos de ventas, empleados y productos. Con la capacidad de analizar un gran volumen de información, podrás tomar decisiones fundamentadas y estratégicas para tu negocio.</p>
-            <div class="card">
-                <img src="/assets/img/empleados.png" alt="Imagen 1">
-                <div class="card-title">Empleados</div>
-            </div>
-            <div class="card">
-                <img src="/assets/img/ventas.png" alt="Imagen 2">
-                <div class="card-title">Ventas</div>
-            </div>
-            <div class="card">
-                <img src="/assets/img/productos.png" alt="Imagen 2">
-                <div class="card-title">Productos</div>
-            </div>
             <a class="link-dashboard" href="/views/dashboard.html" target="_blank">
-                <div class="dashboard">
+                <section class="dashboard">
                     <img src="/assets/img/dashboard.png" alt="Imagen 2">
                     <div class="card-title">Dashboard</div>
-                </div>
+                </section>
             </a>
+            <h1>Equipo</h1>
+                <section class="perfiles">
+                    <div class="card">
+                        <img src="/assets/img/vero.jpeg" alt="Vero">
+                        <div class="card-title">Verónica Montoya Villa</div>
+                        <em>Analista desarrollo de software</em>
+                        <h4><em>Area:</em> TI</h4>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/img/juancho.png" alt="Juancho">
+                        <div class="card-title">Juan José Gutiérrez Holguín</div>
+                        <em>Analista de datos maestros</em>
+                        <h4><em>Area:</em> Datos maestros SAP</h4>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/img/susana.png" alt="Susana">
+                        <div class="card-title">Lenny Susana Duque</div>
+                        <em>Analista de desarrollo Vtex</em>
+                        <h4><em>Area:</em> Negocios Digitales</h4>
+                    </div>
+                </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2023 Todos los derechos reservados por <strong>BusinessView</strong></p>
+            </div>
+          </div>
         </div>
+  </footer>
+  
+  
 
 </body>
 </html>
