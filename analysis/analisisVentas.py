@@ -1,8 +1,7 @@
 import pandas as pd
 
-
 from helpers.crearCSV import crearCSV
-
+from helpers.crearTablaHTML import crearTabla
 
 from data.ventas import ventas
 
@@ -11,7 +10,7 @@ crearCSV(ventas, 'ventas.csv')
 
 #2 cargo la fuente de datos y con PANDAS creo un DATAFRAME
 ventasDataFrame=pd.read_csv('data/ventas.csv')
-
+crearTabla(ventasDataFrame, 'tablaventas')
 
 #3 explorar los datos
 examen1=ventasDataFrame.head()
@@ -23,10 +22,11 @@ examen6=ventasDataFrame.tail(50)
 
 
 #4 filtrar y ordenar (limpiar)
-
+filtroUno=ventasDataFrame.query("(Costo>=290000) and (Costo<=300000)")
+totalventas=filtroUno[['Costo','Cliente']]
 
 #generando html con resultados del filtro
-
+crearTabla(filtroUno,'ventasBajoCosto')
 
 #5 modelar o aplicar modelos 
 
