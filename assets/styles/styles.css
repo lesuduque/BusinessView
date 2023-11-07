@@ -1,11 +1,11 @@
-/* body {
+body {
     background-color: #1e2122;
     color: #fff;
     font-family: 'Lato', sans-serif;
 }
- */
+
 /*Navbar*/
-/* .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,10 +30,10 @@
     color: #898C37;
     margin-right: 10px;
     border-radius: 20px;   
-} */
+}
 
 /*Carrusel*/
-/* .carousel-container {
+.carousel-container {
     position: relative;
     max-width: 100%;
     overflow: hidden;
@@ -85,11 +85,11 @@
     80% {
         transform: translateX(-200%);
     }
-} */
+}
 
 /*Contexto de la herramienta*/
 
-/* .contexto {
+.contexto {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -105,11 +105,11 @@
     font-size: 10em;
     font-weight: bold;
     margin-bottom: 20px;
-} */
+} 
 
 /*Card*/
 
-/* .cards-container {
+.cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,11 +168,11 @@
 
 .dashboard:hover{
     transform: translate(-3px, 0px) skew(7deg, 7deg);
-} */
+}
 
   /* Footer */
 
-  /* .site-footer
+.site-footer
   {
     background-color:#181a1b;
     padding:45px 0 20px;
@@ -185,5 +185,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  } */
+  }
   
