@@ -7,7 +7,7 @@ def crearTabla(dataFrame, nombreTabla):
      archivoHTML=dataFrame.to_html()
      
      #Establecemos la ruta donde vamos a guardar la tabla 
-     rutaArchivo=f"tables/{nombreTabla}.html"
+     rutaArchivo=f"views/tables/{nombreTabla}.html"
      
      #Generamos una estructura HTML
      encabezadoHTML='''
