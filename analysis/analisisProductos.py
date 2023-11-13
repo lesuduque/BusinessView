@@ -12,8 +12,8 @@ productosDataFrame=pd.read_csv('data/productos.csv')
 crearTabla(productosDataFrame,'tablaproductos')
 pdfGraficar(productosDataFrame, "data/productosTabla.pdf")
 
-productosBaratos = productosDataFrame.nsmallest(8, 'CostoUnitario')
-imgGraficar(productosBaratos, "assets/img/graficas/productosBaratos.png","Id","CostoUnitario","Código del Producto","Precio","Productos mas baratos en el ultimo año")
+productosBaratos = productosDataFrame.nsmallest(5, 'CostoUnitario')
+imgGraficar(productosBaratos, "assets/img/graficas/productosBaratos.png","Id","CostoUnitario","Código del Producto","Precio","5 Productos mas baratos en el ultimo año")
 
 productosCostosos = productosDataFrame.query("(CostoUnitario > 500000)")
 filtroUnoProducto = productosCostosos[['Id','Nombre','CostoUnitario']]
