@@ -1,10 +1,10 @@
 import pandas as pd
 
-#from helpers.crearVentasCSV import crearCSV
-#from helpers.crearTablaHTML import crearTabla
+from helpers.crearVentasCSV import crearCSV
+from helpers.crearTablaHTML import crearTabla
 from data.ventas import ventas
-#from helpers.crearGraficas import imgGraficar
-#from helpers.crearArchivosPDF import pdfGraficar
+from helpers.crearGraficas import imgGraficar
+from helpers.crearArchivosPDF import pdfGraficar
 
 crearCSV(ventas, 'ventas.csv')
 
@@ -19,7 +19,7 @@ ventasMayores=ventasDataFrame.query('Costo >= 600000')
 filtroUnoVentas=ventasMayores[['NumeroOrden','Costo']]
 crearTabla(filtroUnoVentas,'ventas600')
 
-ventasIntermedio = ventasDataFrame.query("(Costo>200000) and (Costo<600000)")
+ventasIntermedio = ventasDataFrame.query("(Costo > 200000) and (Costo < 600000)")
 filtroDosVentas = ventasIntermedio[['NumeroOrden', 'Costo']]
 crearTabla(filtroDosVentas,'ventasintermedio')
 
