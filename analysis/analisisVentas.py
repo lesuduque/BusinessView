@@ -9,7 +9,7 @@ from helpers.crearArchivosPDF import pdfGraficar
 crearCSV(ventas, 'ventas.csv')
 
 ventasDataFrame=pd.read_csv('data/ventas.csv')
-crearTabla(ventasDataFrame,'tablaventas')
+crearTabla(ventasDataFrame,'tabla_ventas')
 pdfGraficar(ventasDataFrame, "data/ventasTabla.pdf")
 
 ventasAltas = ventasDataFrame.nlargest(8, "Costo")
@@ -21,5 +21,4 @@ crearTabla(filtroUnoVentas,'ventas600')
 
 ventasIntermedio = ventasDataFrame.query("(Costo > 200000) and (Costo < 600000)")
 filtroDosVentas = ventasIntermedio[['NumeroOrden', 'Costo']]
-crearTabla(filtroDosVentas,'ventasintermedio')
-
+crearTabla(filtroDosVentas,'ventas_intermedio')
