@@ -1153,10 +1153,8 @@ a:focus {
   }
 }
 
-/* Aplica la animación a las barras de progreso específicas utilizando las clases que ya estás utilizando */
-
 .progress-bar {
-  animation: progressAnimation 5s linear infinite; /* Ajusta la duración y la velocidad según tus preferencias */
+  animation: progressAnimation 5s linear infinite;
 }
 
 
