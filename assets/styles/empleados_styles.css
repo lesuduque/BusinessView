@@ -1,0 +1,104 @@
+body {
+    background-color: #1b1d1e;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #181a1b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.buscar, .usuario {
+    width: 30px; /* Reduje el ancho de los íconos */
+    padding: 5px; /* Reduje el espacio interno de los íconos */
+}
+
+.navbar a {
+    background-color: #181a1b;
+    color: #898C37;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 10px;  
+}
+
+.titulo-filtros{
+    text-align: center;
+}
+
+/* cards */
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vista-tablas{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.vista{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card {
+    background-color: #181a1b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dashboard{
+    background-color: #181a1b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translate(-3px, 0px) skew(7deg, 7deg);
+}
+
+.dashboard:hover{
+    transform: translate(-3px, 0px) skew(7deg, 7deg);
+}
