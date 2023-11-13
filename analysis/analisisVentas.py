@@ -2,16 +2,23 @@ import pandas as pd
 
 from helpers.crearVentasCSV import crearCSV
 from helpers.crearTablaHTML import crearTabla
-
 from data.ventas import ventas
+from helpers.crearGraficas import imgGraficar
+from helpers.crearArchivosPDF import pdfGraficar
 
-#1 Crear un CSV con los datos de las ventas
 crearCSV(ventas, 'ventas.csv')
 
-#2 cargo la fuente de datos y con PANDAS creo un DATAFRAME
 ventasDataFrame=pd.read_csv('data/ventas.csv')
+crearTabla(ventasDataFrame,'tabla_ventas')
+pdfGraficar(ventasDataFrame, "data/ventasTabla.pdf")
+
+ventasAltas = ventasDataFrame.nlargest(8, "Costo")
+imgGraficar(ventasAltas, "assets/img/graficas/ventasAltas.png","NumeroOrden","Costo","Numero de orden","Costo","Ventas mas altas en el ultimo año")
 
 ventasMayores=ventasDataFrame.query('Costo >= 600000')
-filtroVentas=ventasMayores[['NumeroOrden','Costo']]
+filtroUnoVentas=ventasMayores[['NumeroOrden','Costo']]
+crearTabla(filtroUnoVentas,'ventas600')
 
-crearTabla(filtroVentas,'ventas600')
+ventasIntermedio = ventasDataFrame.query("(Costo > 200000) and (Costo < 600000)")
+filtroDosVentas = ventasIntermedio[['NumeroOrden', 'Costo']]
+crearTabla(filtroDosVentas,'ventas_intermedio')
