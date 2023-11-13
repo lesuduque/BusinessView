@@ -21,6 +21,11 @@ section {
   display: block;
 }
 
+.bg-color {
+  background-color: #1b1d1e !important;
+}
+
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -29,8 +34,11 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #1e2122;
+  background-color: #1b1d1e;
 }
+
+
+
 
 h4{
   color: #000;
@@ -875,6 +883,7 @@ a:focus {
   display: none;
 }
 
+/* topbar */
 .sidebar .nav-item.dropdown .dropdown-toggle::after,
 .topbar .nav-item.dropdown .dropdown-toggle::after {
   width: 1rem;
