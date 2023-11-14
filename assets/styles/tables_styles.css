@@ -35,7 +35,7 @@ body {
     padding: 5px 10px;  
 }
 
-.titulo-filtros{
+.titulo-filtros {
     text-align: center;
 }
 
@@ -56,6 +56,10 @@ body {
 
 .vista{
     text-decoration: none;
+    color: #fff;
+}
+
+.descarga{
     color: #fff;
 }
 
