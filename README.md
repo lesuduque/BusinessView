@@ -7,7 +7,7 @@ Este proyecto es una aplicación web para el análisis de datos de ventas, emple
 ## Vista previa
 
 
-
+https://youtu.be/LFpP22wvCOk
 ## Tecnologías Utilizadas
 
 - Python
