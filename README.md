@@ -4,7 +4,7 @@ Este proyecto es una aplicación web para el análisis de datos de ventas, emple
 
 
 
-## Capturas de Pantalla
+## Vista previa
 
 
 
